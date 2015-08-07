@@ -20,7 +20,7 @@ public class LineItemApp {
 		// Variables for user input
 		String choice = "y";
 		String itemCode;
-		String taxable;
+		String taxable="";
 
 		// variable to save subtotal values
 		double taxableSubtotal = 0.0, untaxableSubtotal = 0.0, tax = 0.0, grandTotal = 0.0;
@@ -96,6 +96,8 @@ public class LineItemApp {
 				keyboard.nextLine();
 				itemArray = new String[20];
 				continue;
+			}catch (Exception e){
+				System.out.println("Exception Found");
 			}
 			finally {
 				System.out.println("Input entered.");
