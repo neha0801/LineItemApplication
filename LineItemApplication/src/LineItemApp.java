@@ -56,6 +56,7 @@ public class LineItemApp {
 				// set the item code value of LineItem
 				myItem.setItemCode(itemCode);
 				
+				// for exception test purpose
 				itemArray[i] = itemCode;
 				i++;
 				// prompt user for number of items
